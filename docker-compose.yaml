@@ -17,3 +17,9 @@ services:
       - ./.mysql-data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
+
+  redis:
+    image: redis:alpine
+    working_dir: /data
+    volumes:
+      - ./.redis-data:/data
