@@ -5,6 +5,7 @@
     "start": "npm run build && NODE_ENV=production node dist/main.js",
     "build": "tsc -p tsconfig.build.json",
     "dev": "nodemon src/main.ts",
+    "migrate:dev": "prisma migrate dev",
     "lint": "eslint . --fix --ignore-path .gitignore"
   },
   "devDependencies": {
